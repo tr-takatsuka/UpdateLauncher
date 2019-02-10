@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="RLib">
+      <UniqueIdentifier>{2dedbcb7-8eed-4b2a-8afe-73190e0c3c21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RLib\Base">
+      <UniqueIdentifier>{9aaa3357-c068-4470-9f6e-d68a82b0b19e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RLib\Base\AppLog.h">
+      <Filter>RLib\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib\Base\HttpGet.h">
+      <Filter>RLib\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib\Base\String.h">
+      <Filter>RLib\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib\Base\HttpGetMultiPart.h">
+      <Filter>RLib\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib\RLibPrecompile.h">
+      <Filter>RLib</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib\RLibStdHeader.h">
+      <Filter>RLib</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib\RLibWinTargetver.h">
+      <Filter>RLib</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib\Base\Zip.h">
+      <Filter>RLib\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib\Base\RemoteZip.h">
+      <Filter>RLib\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib\Base\Algorithm.h">
+      <Filter>RLib\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib\Base\File.h">
+      <Filter>RLib\Base</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="RLib\Base\HttpGet.cpp">
+      <Filter>RLib\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib\Base\Zip.cpp">
+      <Filter>RLib\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib\Base\RemoteZip.cpp">
+      <Filter>RLib\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib\Base\File.cpp">
+      <Filter>RLib\Base</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

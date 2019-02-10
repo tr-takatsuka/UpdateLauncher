@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UpdateLauncher", "UpdateLauncher\UpdateLauncher.vcxproj", "{9697AD4D-4902-409B-8E04-73FF33782070}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RLib", "RLib\RLib_vc12.vcxproj", "{533107BB-70C2-411B-A7BB-1248F3363CFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9697AD4D-4902-409B-8E04-73FF33782070}.Debug|x86.ActiveCfg = Debug|Win32
+		{9697AD4D-4902-409B-8E04-73FF33782070}.Debug|x86.Build.0 = Debug|Win32
+		{9697AD4D-4902-409B-8E04-73FF33782070}.Release|x86.ActiveCfg = Release|Win32
+		{9697AD4D-4902-409B-8E04-73FF33782070}.Release|x86.Build.0 = Release|Win32
+		{533107BB-70C2-411B-A7BB-1248F3363CFA}.Debug|x86.ActiveCfg = Debug|Win32
+		{533107BB-70C2-411B-A7BB-1248F3363CFA}.Debug|x86.Build.0 = Debug|Win32
+		{533107BB-70C2-411B-A7BB-1248F3363CFA}.Release|x86.ActiveCfg = Release|Win32
+		{533107BB-70C2-411B-A7BB-1248F3363CFA}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FFB6653-550F-4BA5-BA9F-7F04FD81439A}
+	EndGlobalSection
+EndGlobal
