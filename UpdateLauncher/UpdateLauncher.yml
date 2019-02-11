@@ -1,3 +1,13 @@
+﻿
+# zip を展開するディレクトリ
+# ・"$(ExeDir)" → UpdateLauncehr.exe のあるディレクトリに置換されます
 targetDir: $(ExeDir)
+
+# ダウンロード URL
+# ・ローカルに存在しないファイル、差異のあるファイルのみダウンロードします。
 remoteZip: https://user:12345678@example.com/software.zip
+
+# 最後にキックする EXE
+# ・"$(ExeDir)" → UpdateLauncehr.exe のあるディレクトリに置換されます
 launchExe: $(ExeDir)boot.exe
+
