@@ -4,12 +4,11 @@
 #include "pch.h"
 //#include "resource.h"
 
-#define _NOEXCEPT noexcept	// yaml-cpp0.6.2+vs2017 のビルドエラー回避
 #include <yaml-cpp\yaml.h>
 #ifdef _DEBUG
-#pragma comment(lib,"../external/yaml-cpp-yaml-cpp-0.6.2build/Debug/libyaml-cppmtd.lib")
+#pragma comment(lib,"../external/yaml-cpp-yaml-cpp-0.6.3build/Debug/libyaml-cppmtd.lib")
 #else
-#pragma comment(lib,"../external/yaml-cpp-yaml-cpp-0.6.2build/Release/libyaml-cppmt.lib")
+#pragma comment(lib,"../external/yaml-cpp-yaml-cpp-0.6.3build/Release/libyaml-cppmt.lib")
 #endif
 
 

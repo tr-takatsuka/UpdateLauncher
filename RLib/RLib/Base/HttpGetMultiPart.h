@@ -103,7 +103,7 @@ namespace Inner
 
 							const std::string sBody = [&mes]{
 									std::stringstream ss;
-									ss << beast::buffers( mes.body().data() );
+									ss << beast::buffers_to_string( mes.body().data() );
 									return ss.str();
 								}();
 							if( sBody.empty() ){
