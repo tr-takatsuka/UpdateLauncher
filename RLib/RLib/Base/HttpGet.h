@@ -3,6 +3,7 @@
 #include <boost/beast/http.hpp>
 
 #include <boost/beast/core/flat_buffer.hpp>
+#include <boost/beast/core/buffers_to_string.hpp>
 
 namespace RLib
 {
@@ -93,7 +94,7 @@ namespace http = boost::beast::http;
 		{
 			std::stringstream ss;
 			auto& body = mes.body();
-			ss << beast::buffers( body.data() );
+			ss << beast::buffers_to_string(body.data());
 			std::vector<char> v(( std::istreambuf_iterator<char>(ss)), (std::istreambuf_iterator<char>() ));
 			body.consume(v.size());
 			return v;
@@ -106,7 +107,7 @@ namespace http = boost::beast::http;
 			auto& body = res.get().body();
 			const size_t size = body.size();
 			if( size > 0 ){
-				os << beast::buffers( body.data() );
+				os << beast::buffers_to_string( body.data() );
 				body.consume(size);
 			}
 			return size;

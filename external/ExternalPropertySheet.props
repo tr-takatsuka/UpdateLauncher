@@ -5,10 +5,10 @@
   <PropertyGroup />
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)external\boost_1_69_0;$(SolutionDir)external\openssl-1.1.1a\x86\include;$(SolutionDir)external\yaml-cpp-yaml-cpp-0.6.2\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)external\boost_1_71_0;$(SolutionDir)external\openssl-1.1.1d\x86\include;$(SolutionDir)external\yaml-cpp-yaml-cpp-0.6.3\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>$(SolutionDir)external\boost_1_69_0\stage\lib;$(SolutionDir)external\openssl-1.1.1a\x86\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)external\boost_1_71_0\stage\lib;$(SolutionDir)external\openssl-1.1.1d\x86\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup />

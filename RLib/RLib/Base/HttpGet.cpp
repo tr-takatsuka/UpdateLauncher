@@ -129,7 +129,15 @@ Http::CResult Http::Get(asio::io_context &ioContext,const asio::yield_context &y
 
 		// basic îFèÿ
 		if( !target.sUserName.empty() || !target.sPassword.empty() ){
-			std::string sAuth = beast::detail::base64_encode( target.sUserName + ":" + target.sPassword );
+
+			const auto base64Encode = [](const std::string &s){
+				std::string dst;
+				dst.resize(beast::detail::base64::encoded_size(s.size()));
+				dst.resize(beast::detail::base64::encode(&dst.at(0), s.data(), s.size()));
+				return dst;
+			};
+			const std::string sAuth = base64Encode( target.sUserName + ":" + target.sPassword );
+
 			req.set(http::field::authorization, "Basic "+sAuth );
 		}
 
